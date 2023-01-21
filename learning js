@@ -1,0 +1,120 @@
+let a=12
+console.log(a)
+var b=67
+console.log(b)
+b="tushu"
+console.log(b)
+const author="tushar laha"
+let c=null
+let d=true
+let e="riya"
+let k=Symbol("*I am a nice symbol")
+let g=undefined
+let h=BigInt("657")+BigInt("3")
+console.log(b,c,d,e,k,g,h)
+console.log(typeof h)
+const item ={
+    "tushar":true,
+    "rohan":false,
+    "rahul":undefined
+}
+console.log(item["rohan"])
+let x=45;
+let z=3;
+console.log("x+z=", x+z )
+console.log("x-z=", x-z )
+console.log("x*z=", x*z )
+console.log("x/z=", x/z )
+//comparison operator
+let comp1=8;
+let comp2="8";
+console.log("comp1==comp2 is",comp1==comp2)
+console.log("comp1!=comp2 is",comp1!=comp2)
+console.log("comp1===comp2 is",comp1===comp2)
+console.log("comp1!==comp2 is",comp1!==comp2)
+//assignment operator
+let commp1=50;
+let commp2=10;
+console.log("commp1+=commp2 is",commp1+=commp2)
+console.log("commp1-=commp2 is",commp1-=commp2)
+console.log("commp1*=commp2 is",commp1*=commp2)
+console.log("commp1/=commp2 is",commp1/=commp2)
+//logical operator
+let t=5;
+let f=6;
+console.log(t<f && t==5)
+console.log(t>f || t==5)
+console.log(!false)
+// //conditional  operator
+let age = prompt("hey what's your age?");
+
+age=Number.parseInt(age)//converting string into number(typecasting)
+if(age<0){
+    alert("this is a valid age");
+}
+if(age<9){
+    alert("you are a kid and you cannot think of driving in this age");
+}
+else if(age<18 && age>=9){
+    alert("you are a kid and you can think of driving after age 18");
+}
+else{
+    alert("you can now drive above age 18");
+}
+console.log("you can", (age<18? "not drive" : "drive"))
+//switch case 
+const expr = 'guava'
+switch (expr){
+case 'mango':
+console.log("mangoes are 50rs/kg")
+break;
+case'guava':
+case 'banana':
+console.log("guava and bananas are 180rs/kg");
+break;
+default:
+console.log("there are no more fruits")
+}
+//for loop
+for(let i =0 ;i<5 ;i++)
+console.log(i)
+//program to add first n natural numbers
+let sum=0
+let n=prompt("enter your number")
+n=Number.parseInt(n)
+for(let i=0;i<n;i++){
+    sum += (i+1)
+}
+console.log("sum of first" +n + "natural numbers is " +sum)
+//for in loops
+let obj={
+    tushar:95,
+    shubham:22,
+    aniket:55,
+    shivam:45,
+    vishal:67,
+}
+for(let a in obj){
+    console.log(" marks of " +a + " is " +obj[a] )
+}
+//for of loops
+for(let b of "tushar"){
+    console.log(b)
+}
+//while loop
+let no =prompt("enter your value")
+no=Number.parseInt(no)
+i=0
+while(i<no){
+console.log(i)
+i++
+}
+//do while loop
+let nom =prompt("enter your value")
+nom=Number.parseInt(nom)
+i=0
+do{
+console.log(i)
+i++;
+}
+while(i<nom)
